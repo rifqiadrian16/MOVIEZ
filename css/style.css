@@ -325,7 +325,8 @@ body {
 }
 
 .footer-now-playing i,
-.footer {
+.footer-daftar i,
+.footer i {
   color: white;
   padding-right: 8%;
   font-size: 20px;
@@ -680,6 +681,11 @@ body {
     width: 90%;
   }
   .title-theatres h1 {
-    margin-right: 0px;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+
+  .title-theatres select {
+    padding: 5px 10px;
   }
 }
