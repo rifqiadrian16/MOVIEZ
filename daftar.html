@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>MOVIEZ</title>
+  </head>
+  <body>
+    <div class="konten">
+      <div class="logo">
+        <h1>MOVIEZ</h1>
+      </div>
+      <div class="menu">
+        <a href="index.html" id="now-playing">NOW PLAYING</a>
+        <a href="upcoming.html" id="upcoming">UPCOMING</a>
+        <a href="theatres.html" id="theatres">THEATRES</a>
+        <a href="login.html" id="login">LOGIN/MASUK</a>
+        <a href="daftar.html" id="daftar" class="span">DAFTAR</a>
+      </div>
+      <div class="menu-icon">
+        <i class="bi bi-list" onclick="toggleSideMenu()"></i>
+      </div>
+    </div>
+    <div id="side-menu" class="side-menu">
+      <a href="index.html">NOW PLAYING</a>
+      <a href="upcoming.html">UPCOMING</a>
+      <a href="theatres.html">THEATRES</a>
+      <a href="login.html">LOGIN/MASUK</a>
+      <a href="daftar.html">DAFTAR</a>
+    </div>
+    <div class="container-daftar">
+      <div class="title">
+        <h1>Sign Up</h1>
+      </div>
+      <form>
+        <div class="mb-3">
+          <label for="noHandphone" class="form-label">No Handphone</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="noHandphone"
+            placeholder="Nomor Handphone"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="namaDepan" class="form-label">Nama Depan</label>
+          <input
+            type="text"
+            pattern="[A-Za-z\s]+"
+            class="form-control"
+            placeholder="First Name"
+            id="namaDepan"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="namaBelakang" class="form-label">Nama Belakang</label>
+          <input
+            type="text"
+            class="form-control"
+            pattern="[A-Za-z\s]+"
+            placeholder="Last Name"
+            id="namaBelakang"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Email"
+            id="email"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            id="password"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="konfirmPassword" class="form-label"
+            >Konfirmasi Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Re-Type your Password"
+            id="konfirmPassword"
+          />
+        </div>
+      </form>
+      <button type="button" class="btn btn-primary">Daftar</button>
+      <p>Sudah punya akun? <a href="login.html">Masuk</a></p>
+    </div>
+    <div class="footer-daftar">
+      <i class="bi bi-instagram"></i>
+    </div>
+    <div class="iklan">
+      <i class="bi bi-star-fill"></i>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
